@@ -1,0 +1,146 @@
+.header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.webstieName {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.name1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.name1::after {
+  content: "anagement";
+}
+.name2 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.searchForm {
+  color: transparent;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 6px;
+  height: 36px;
+  background-color: white;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+.input[type="search"] {
+  border: none;
+  background: white;
+  width: 400px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+.input[type="search"]::placeholder {
+  color: #bbb;
+}
+.button[type="submit"] {
+  padding: 0;
+  padding-left: 0;
+  margin-right: 10px;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+}
+
+.button[type="submit"]:hover {
+  opacity: 1;
+}
+.button[type="submit"]:focus,
+.input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+.accountStatus {
+  display: flex;
+  position: fixed;
+  right: 120px;
+  top: 8px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 320px;
+}
+.accountImg {
+  height: 30px;
+}
+.signInBtn {
+  /* z-index: -1; */
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.shoppingCart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.cart {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.totalAmount {
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 100px;
+  }
+
+  .searchForm {
+    position: fixed;
+    top: 40px;
+    left: 5%;
+  }
+  .input[type="search"] {
+    width: 250px;
+  }
+  .signInBtn {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .webstieName {
+    margin-left: 20px;
+  }
+  .name1::after {
+    content: "";
+  }
+  .searchForm {
+    position: fixed;
+    top: 40px;
+    right: 15%;
+  }
+}

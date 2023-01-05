@@ -1,0 +1,175 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formWrapper {
+  width: 80%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+.inputLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+}
+
+.inputField {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+.invalidInput {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid red;
+  width: 100%;
+}
+.submitBtn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 3px;
+  border: none;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-weight: 800;
+  background-color: rgb(85, 94, 223);
+}
+
+.accountSetting {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: grey;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.btnIn {
+  display: flex;
+  position: relative;
+  flex-direction: wrap;
+}
+
+.showBtn {
+  position: absolute;
+  right: 10px;
+  margin-top: 20px;
+  border: none;
+  background: none;
+  color: grey;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hintText {
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.hintForm {
+  width: 80%;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.messageForm {
+  width: 80%;
+  height: 300px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.resetMessage {
+  width: 300px;
+  text-align: center;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.errorMessage {
+  font-size: 10px;
+  text-align: right;
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .formWrapper {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .inputContainer {
+    margin-bottom: 5px;
+  }
+  .inputLabel {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .inputField {
+    font-size: 16px;
+  }
+  .invalidInput {
+    font-size: 16px;
+  }
+  .submitBtn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .showBtn {
+    font-size: 13px;
+  }
+
+  .accountSetting {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .textContainer {
+    margin-bottom: 10px;
+  }
+  .hintForm {
+    width: 90%;
+  }
+  .messageForm {
+    height: 250px;
+  }
+}
